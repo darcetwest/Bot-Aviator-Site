@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Promoção VIP Bot Aviator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f2f2f2;
+            color: #333;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #d10000;
+        }
+        .container {
+            background: #fff;
+            padding: 25px;
+            border-radius: 12px;
+            max-width: 700px;
+            margin: 30px auto;
+            box-shadow: 0 0 15px rgba(0,0,0,0.15);
+        }
+        .pagamento, .dados, .formas-pagamento {
+            margin-top: 25px;
+        }
+        label, input[type="text"] {
+            display: block;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        input[type="text"] {
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+        .metodo {
+            border: 2px solid #d10000;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+            background: #fff5f5;
+        }
+        .metodo img {
+            max-width: 120px;
+            display: block;
+            margin-bottom: 10px;
+        }
+        button {
+            background-color: #d10000;
+            color: white;
+            font-size: 16px;
+            padding: 15px;
+            border: none;
+            width: 100%;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background: green;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .highlight {
+            background: #d10000;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 8px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>🎉 PROMOÇÃO EXCLUSIVA BOT AVIATOR 🎉</h1>
+        <p style="text-align: center; font-size: 18px;">Adquira agora o <strong>BOT do Aviator</strong> e receba <strong>sinais VIP 24h</strong> por dia dos melhores especialistas do Brasil 🇧🇷.</p>
+
+        <div class="pagamento">
+            <h2>📦 Plano Vitalício</h2>
+            <p>✔ Acesso vitalício ao Bot do Aviator<br>💵 Investimento único de <span class="highlight">5.500 Kz</span></p>
+        </div>
+
+        <div class="formas-pagamento">
+            <h2>💳 Formas de Pagamento</h2>
+
+            <div class="metodo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Multicaixa_logo.svg/320px-Multicaixa_logo.svg.png" alt="Multicaixa Express">
+                <strong>Multicaixa Express (Recomendado)</strong>
+                <p>✔ Mais rápido<br>✔ Sem taxas adicionais<br>✔ Confirmação imediata</p>
+                <p><strong>Número para pagamento:</strong> <span class="highlight">946278255</span></p>
+                <p>📲 Acesse o aplicativo <strong>Multicaixa Express</strong>, escolha "Transferência" ou "Pagamento de Serviços" e envie para o número acima.</p>
+            </div>
+        </div>
+
+        <div class="dados">
+            <h2>📝 Preencha Seus Dados</h2>
+            <form onsubmit="enviarParaWhatsapp(); return false;">
+                <input type="text" id="nome" placeholder="Seu nome completo" required>
+                <input type="text" id="telefone" placeholder="Número de telefone (ex: 935657256)" required>
+                <button type="submit">Comprar Agora</button>
+            </form>
+        </div>
+    </div>
+
+    <a class="whatsapp-button" href="https://wa.me/244946278255" target="_blank">
+        📞 Fala connosco no WhatsApp
+    </a>
+
+    <script>
+        function enviarParaWhatsapp() {
+            var nome = document.getElementById("nome").value;
+            var telefone = document.getElementById("telefone").value;
+
+            var mensagem = Olá, quero comprar o Bot Aviator!%0A🧍 Nome: ${nome}%0A📞 Telefone: ${telefone};
+            var url = "https://wa.me/244946278255?text=" + mensagem;
+            window.open(url, "_blank");
+        }
+    </script>
+
+</body>
+</html>
+<!-- Adicione esta parte logo abaixo da explicação do pagamento Multicaixa Express -->
+<p style="background: #fff3cd; color: #856404; padding: 15px; border-left: 6px solid #ffc107; border-radius: 8px; margin-top: 20px;">
+    ⚠ <strong>Atenção:</strong> Após realizar o pagamento, envie o <strong>comprovativo</strong> imediatamente para o nosso WhatsApp <strong>946278255</strong> para garantir a ativação do seu acesso.
+</p>
